@@ -1,0 +1,154 @@
+.artisan-page{
+    width: 82%;
+    margin: 80px 9%;
+    display: flex;
+    color: #193d83;
+}
+@media all and (max-width:768px) {
+    .artisan-page{
+        width: 98%;
+        margin: 8px 1%;
+        display: inline-block;
+        color: #193d83;
+    }
+}
+.artisan-page-part{
+    width: 50%;
+    display: inline-block;
+    height: 100%;
+}
+@media all and (max-width:768px) {
+    .artisan-page-part{
+        width: 98%;
+        margin: 1px 1%;
+        display: inline-block;
+        height: 100%;
+    }
+}
+
+.artisan-page-part img{
+    height: 100%;
+}
+@media all and (max-width:768px) {
+    .artisan-page-part img{
+        height: 80%;
+        width: 99%;
+    }
+}
+@media all and (max-width:768px) {
+    .liens{
+        width: 98%;
+        margin: 0 1%;
+    }
+    .lien{
+        text-align: center;
+        width: 45%;
+        margin: 2%;
+        text-decoration: none;
+        display: inline-block;
+      
+}
+
+}
+.artisan-page-services{
+    display: inline-block;
+    width: 82%;
+    margin: 40px 9%;
+    
+}
+@media all and (max-width:768px) {
+    .artisan-page-services{
+        width: 98%;
+        margin: 10px 1%;
+        display: inline-block;
+    }
+}
+
+.artisan-page-services-prev-title{
+    text-align: center;
+    font-size: 2.5em;
+}
+.artisan-page-service-title{
+    font-size: 1.0em;
+}
+.artisan-page-service{
+    width: 30%;
+    margin: 2px 1%;
+    display: inline-block;
+}
+@media all and (max-width:768px) {
+    .artisan-page-service{
+        margin: 12px 1%;
+        display: block;
+        width: 98%;
+        display: inline-block;
+    }
+}
+.artisan-page-service img{
+    width: 100%;
+    height: 250px;
+}
+@media all and (max-width:768px) {
+    .artisan-page-service img{
+        width: 100%;
+        height: 200px;
+    }
+}
+body{
+    font-family: 'Abel', sans-serif;
+}
+.artisans-prev{
+    width: 80%;
+    margin: 50px 9%;
+}
+@media all and (max-width:768px) {
+    .artisans-prev{
+        width: 98%;
+        margin: 10px 1%;
+        background-color: aqua;
+    }
+}
+
+.artisans-prev h3{
+    text-align: center;
+    margin: 50px 0;
+}
+.artisans{
+    width: 100%;
+    display: block;
+}
+@media all and (max-width:768px) {
+    .artisans{
+        width: 98%;
+        display: flex;
+        margin: 1px 1%;
+    }
+}
+
+.artisan{
+    width: 20%;
+    margin: 30px 2%;
+    display: inline-block;
+}
+@media all and (max-width:768px) {
+    .artisan{
+        width: 98%;
+        margin: 0 1%;
+        display: flex;
+    }
+}
+
+.artisan img{
+    width: 100%;
+    height: 250px;
+}
+@media all and (max-width:768px) {
+    .artisan img{
+        width: 100%;
+        height: 100px;
+    }
+}
+.artisan-page-part input, .artisan-page-part button, .artisan-page-part textarea{
+    width: 100%;
+    margin: 10px 0;
+}

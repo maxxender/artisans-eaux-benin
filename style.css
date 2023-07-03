@@ -1,0 +1,75 @@
+.logo{
+    width: 50px;
+    height: 50px;
+}
+body{
+    font-family: 'Abel', sans-serif;
+}
+.navbar{
+    background-color: #000;
+    
+}
+
+.account-tab-link
+{
+    background-color: #193d83;
+    color: #fff;
+    border-radius: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    -o-border-radius: 0;
+    margin: 5px 0;
+}
+.account-tab-link:visited
+{
+    background-color: #193d83;
+    color: #fff;
+    border-radius: 0;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+    margin: 5px 0;
+}
+.account-tab-link:hover
+{
+    background-color: #fff;
+    color: #193d83;
+    border: 1px solid #193d83;
+    border-radius: 0;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+
+footer{
+    margin: 100px 0 0 0;
+    display: flex;
+    background-color: #193d83;
+    color: #ffffff;
+}
+@media all and (max-width:768px) {
+    footer{
+        margin: 100px 0 0 0;
+        display: inline-block;
+    }
+}
+.footer-part{
+    width: 32%;
+    margin: 0 2%;
+    padding: 10px;
+}
+@media all and (max-width:768px) {
+    .footer-part{
+        width: 98%;
+        margin: 10px 1%;
+        padding: 10px;
+    }
+}

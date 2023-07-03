@@ -1,0 +1,102 @@
+.account
+{
+    display: flex;
+}
+@media screen and (max-width:768px) {
+    .account{
+        display: inline-block;
+    }
+}
+.account a{
+    color: #193d83;
+}
+@media screen and (max-width:768px) {
+}
+.account-part
+{
+    border: 0px solid #193d83;
+    width: 24%;
+    margin: 1%;
+}
+@media screen and (max-width:768px) {
+    
+}
+.account-part-part{
+    margin: 20px 0;
+    border: 10px solid #f6f8fb;
+}
+.account-part h4{
+    border-bottom: 1px solid #193d83;
+    color: #193d83;
+    
+    padding: 1px;
+    font-size: 1.0em;
+}
+@media screen and (max-width:768px) {
+    .account-part
+    {
+        width: 98%;
+        margin: 0 1%;
+    }
+}
+.account-part img{
+    width: 98%;
+    margin: 0 1%;
+    
+}
+@media screen and (max-width:768px) {
+    .account-part img{
+        width: 60%;
+        margin: 0 20%;
+        height: 70%;
+    }
+}
+.button-account-page{
+    background-color: rgb(161, 183, 196);
+    padding: 10px;
+}
+@media screen and (max-width:768px) {
+}
+
+.account input, .account button, .account select, .account textarea{
+    width: 100%;
+    margin: 3px 0;
+    border: 1px solid #e2e0e0;
+    color: #193d83;
+    font-family: "Abel";
+}
+@media screen and (max-width:768px) {
+    .account input, .account button, .account select, .account textarea{
+        width: 90%;
+        margin: 4px 5%;
+    }
+}
+.account legend{
+    font-size: 1.0em;
+    color: #193d83;
+    width: 90%;
+    margin: 1px 5%;
+
+}
+#set-new-photo-button, #new_photo_profil{
+    display: none;
+}
+.action{
+    text-decoration: none;
+    border: 1px solid #193d83;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    margin: 10px 0 0 10px;
+    padding: 10px 0;
+    text-align: center;
+    justify-content: center;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.action:hover{
+    background-color: #193d83;
+    color: #fff;
+}
