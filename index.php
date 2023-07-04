@@ -49,6 +49,15 @@
         Consultez la liste des services offert par nos plombiers et contactez les directement<br/>
       </h3>
       <div class="services">
+          <form action="" method="post">
+            <legend>Trouvez un plombier dans ma ville</legend>
+            <select name="" id="">
+              <option value="">Selectionnnez la ville pour la prestation</option>
+              <?php foreach($villes as $ville) :?>
+                <option value=""><?= $ville ?></option>
+              <?php endforeach ?>
+            </select>
+          </form>
           <?php foreach($services as $service):?>
             <div class="service">
               <h3 class="service-title"><?= $service['titre_service'] ?></h3>
