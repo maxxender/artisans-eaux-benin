@@ -33,7 +33,7 @@
             </p>
             <div class="liens">
               <a href="./inscription.php" class="lien">S'inscrire sur le site</a>
-              <a href="" class="lien">contactez un plombier</a>
+              <a href="./artisans.php" class="lien">contactez un plombier</a>
             </div>
         </div>
         <div class="president-part">
@@ -48,9 +48,10 @@
         Avez vous besoin d'un service de plomberie ? <br/>
         Consultez la liste des services offert par nos plombiers et contactez les directement<br/>
       </h3>
-      <div class="services">
-          <form action="" method="post">
-            <legend>Trouvez un plombier dans ma ville</legend>
+      <div class="besoin-plombiers">
+        <h3>Besoin d'un plombier pour un service rapide ou une prestation à long terme ?</h3>
+      <form action="" method="post">
+            <legend>Trouvez un plombier tout de suite près de chez vous</legend>
             <select name="" id="">
               <option value="">Selectionnnez la ville pour la prestation</option>
               <?php foreach($villes as $ville) :?>
@@ -58,10 +59,11 @@
               <?php endforeach ?>
             </select>
           </form>
+      </div>
+      <div class="services">
           <?php foreach($services as $service):?>
             <div class="service">
               <h3 class="service-title"><?= $service['titre_service'] ?></h3>
-              <img src="images/<?= !empty($service['photo_service']) ? $service['photo_service'] : 'eau3.png' ?>" alt="">
               <span class="service-title"><?= $service['prix_service'] ?> f cfa</span> / <a href="tel:+229<?= $service['tel'] ?>">Appelez</a>
           </div>
           <?php endforeach ?>

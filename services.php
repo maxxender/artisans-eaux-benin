@@ -46,7 +46,6 @@ $services = $req1->fetchAll();
           <?php foreach($services as $service):?>
             <div class="service">
               <h3 class="service-title"><?= $service['titre_service'] ?></h3>
-              <img src="images/<?= !empty($service['photo_service']) ? 'services/'.$service['photo_service'] : 'eau3.png' ?>" alt="">
               <span class="service-title"><?= $service['prix_service'] ?> f cfa</span> / <a href="tel:+229<?= $service['tel'] ?>">Appelez</a>
           </div>
           <?php endforeach ?>
