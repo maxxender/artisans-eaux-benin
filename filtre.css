@@ -1,0 +1,16 @@
+.filtre{
+    border: 0px solid blue;
+    width: 94%;
+    margin: 10px 3%;
+    display: flex;
+    color: #193d83;
+    font-family: "Abel","sans-serif";
+}
+
+.filtre .form-part{
+    border: 0px solid orange;
+    display: inline-block;
+    margin: 0 10px;
+    font-family: "Abel";
+    font-size: 1.1em;
+}
