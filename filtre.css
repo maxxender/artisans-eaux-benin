@@ -1,16 +1,79 @@
 .filtre{
-    border: 0px solid blue;
-    width: 94%;
-    margin: 10px 3%;
-    display: flex;
+    border: 1px solid #193d83;
+    width: 95%;
+    margin: 10px 1%;
+    display: inline-block;
     color: #193d83;
     font-family: "Abel","sans-serif";
+    align-content: center;
+    text-align: center;
+}
+@media all and (max-width:768px) {
+    .filtre{
+        display: inline-block;
+    }
+}
+.filtre h4{
+    width: 25%;
+    font-weight: bold;
+}
+@media all and (max-width:768px) {
+    .filtre h4{
+        width: 100%;
+        display: inline-block;
+        border: 1px solid red;
+    }
 }
 
 .filtre .form-part{
     border: 0px solid orange;
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 4px;
     font-family: "Abel";
-    font-size: 1.1em;
+    height: 80px;
+}
+@media all and (max-width:768px) {
+    .filtre .form-part{
+        height: 30px;
+        width: 30%;
+        display: inline-block;
+    }
+}
+.filtre select{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #193d83;
+}
+@media all and (max-width:768px) {
+    .filtre select {
+        width: 30%;
+        display: inline-block;
+    }
+}
+.filtre input{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border: 1px solid #193d83;
+}
+.filtre button{
+    display: inline-block;
+    position: relative;
+    bottom: 8px;
+    background-color: #193d83;
+    color: #fff;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+
+}
+@media all and (max-width:768px) {
+    .filtre button{
+        width: 100%;
+        height: 10px;
+        position: relative;
+        bottom: 0;
+        display: inline-block;
+    }
 }
