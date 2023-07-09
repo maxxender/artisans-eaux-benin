@@ -48,18 +48,6 @@
         Avez vous besoin d'un service de plomberie ? <br/>
         Consultez la liste des services offert par nos plombiers et contactez les directement<br/>
       </h3>
-      <div class="besoin-plombiers">
-        <h3>Besoin d'un plombier pour un service rapide ou une prestation à long terme ?</h3>
-      <form action="" method="post">
-            <legend>Trouvez un plombier tout de suite près de chez vous</legend>
-            <select name="" id="">
-              <option value="">Selectionnnez la ville pour la prestation</option>
-              <?php foreach($villes as $ville) :?>
-                <option value=""><?= $ville ?></option>
-              <?php endforeach ?>
-            </select>
-          </form>
-      </div>
       <div class="services">
           <?php foreach($services as $service):?>
             <div class="service">
