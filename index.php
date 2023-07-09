@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="slider.css">
+    <link rel="stylesheet" href="filtre.css">
   </head>
   <body>
    <?php include_once 'header.php' ?>
@@ -48,11 +49,12 @@
         Avez vous besoin d'un service de plomberie ? <br/>
         Consultez la liste des services offert par nos plombiers et contactez les directement<br/>
       </h3>
+      <?php include_once "filtre.php" ?>
       <div class="services">
           <?php foreach($services as $service):?>
             <div class="service">
               <h3 class="service-title"><?= $service['titre_service'] ?></h3>
-              <span class="service-title"><?= $service['prix_service'] ?> f cfa</span> / <a href="tel:+229<?= $service['tel'] ?>">Appelez</a>
+              <span class="service-title"><?= $service['prix_service'] ?> f cfa</span> / <a href="tel:+229<?= $service['tel'] ?>">Appelez le plombier</a>
           </div>
           <?php endforeach ?>
       </div>
