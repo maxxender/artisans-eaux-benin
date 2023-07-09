@@ -19,6 +19,7 @@ $services = $req1->fetchAll();
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="filtre.css">
   </head>
   <body>
     <?php include_once "header.php" ?>
@@ -40,13 +41,14 @@ $services = $req1->fetchAll();
             <img src="images/WhatsApp Image 2023-05-09 at 09.25.22 (1).jpeg" alt="">
         </div>
     </div>
+    <?php include_once 'filtre.php' ?>
 
     <div class="services-prev">
       <div class="services">
           <?php foreach($services as $service):?>
             <div class="service">
               <h3 class="service-title"><?= $service['titre_service'] ?></h3>
-              <span class="service-title"><?= $service['prix_service'] ?> f cfa</span> / <a href="tel:+229<?= $service['tel'] ?>">Appelez</a>
+              <span class="service-title"><?= $service['prix_service'] ?> f cfa</span> / <a href="tel:+229<?= $service['tel'] ?>">Appelez le plombier </a>
           </div>
           <?php endforeach ?>
       </div>
