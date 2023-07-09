@@ -1,9 +1,10 @@
 <?php include_once 'ville-benin.php' ?>
 <div class="filtre">
-    <h4 class="form-part">Filtrez les services de plomberies par ville ou par prix</h4>
+    <h4 class="">Filtrez les services de plomberies par ville ou par prix</h4>
     <form action="">
+        <div class="form-parts">
         <div class="form-part">
-            <h5>Selectionnez la ville ou vous etes</h5>
+            <legend>Ou etes vous ?</legend>
             <select name="" id="">
                 <?php  foreach($villes as $ville): ?>
                     <option value=""><?= $ville ?></option>
@@ -11,10 +12,15 @@
             </select>
         </div>
         <div class="form-part">
-            <h5>Entrez votre budget minimale et votre budget maximale</h5>
+            <legend>Budget minimale</legend>
             <input type="text" placeholder="Montant minimale">
+        </div>
+        <div class="form-part" >
+            <legend>Budget maximale</legend>
             <input type="text" placeholder="Montant maximale">
         </div>
-        <button class="form-part">Cherchez selon mes critères</button>
+        </div>
+       
+        <button class="">Cherchez selon mes critères</button>
     </form>
 </div>
