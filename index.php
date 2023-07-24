@@ -34,7 +34,7 @@
             </p>
             <div class="liens">
               <a href="./inscription.php" class="lien">S'inscrire sur le site</a>
-              <a href="./artisans.php" class="lien">contactez un plombier</a>
+              <a href="./artisans.php" class="lien" style="display: none;">contactez un plombier</a>
             </div>
         </div>
         <div class="president-part">
@@ -53,8 +53,9 @@
       <div class="services">
           <?php foreach($services as $service):?>
             <div class="service">
-              <h3 class="service-title"><?= $service['titre_service'] ?></h3>
-              <span class="service-title"><?= $service['prix_service'] ?> f cfa</span> / <a href="tel:+229<?= $service['tel'] ?>">Appelez le plombier</a>
+              <h3 class="service-title"><?= $service['titre_service'] ?> </h3>
+              <img src="./images/WhatsApp Image 2023-05-09 at 09.24.57 (1).jpeg" alt="" class="image">
+              <span class="service-price"><?= $service['prix_service'] ?> f cfa</span> / <a href="tel:+229<?= $service['tel'] ?>">Appelez le plombier</a>
           </div>
           <?php endforeach ?>
       </div>
