@@ -45,21 +45,42 @@
     </div>
     
     <div class="services-prev">
-      <h3 class="services-prev-title">
-        Avez vous besoin d'un service de plomberie ? <br/>
-        Consultez la liste des services offert par nos plombiers et contactez les directement<br/>
-      </h3>
-      <?php include_once "filtre.php" ?>
-      <div class="services">
-          <?php foreach($services as $service):?>
-            <div class="service">
-              <h3 class="service-title"><?= $service['titre_service'] ?> </h3>
-              <img src="./images/WhatsApp Image 2023-05-09 at 09.24.57 (1).jpeg" alt="" class="image">
-              <span class="service-price"><?= $service['prix_service'] ?> f cfa</span> / <a href="tel:+229<?= $service['tel'] ?>">Appelez le plombier</a>
+      <h3 class="services-title">De quel service de plomberie avez vous besoin</h3>
+        <div class="services">
+          <div class="service">
+            <img src="./images/WhatsApp Image 2023-05-08 at 22.21.18.jpeg" alt="" class="image">
+            <h5 class="service-title">Réalisation de forage</h5>
           </div>
-          <?php endforeach ?>
+          <div class="service">
+            <img src="./images/WhatsApp Image 2023-05-08 at 22.21.18.jpeg" alt="" class="image">
+            <h5 class="service-title">Réalisation de forage</h5>
+          </div>
+          <div class="service">
+            <img src="./images/WhatsApp Image 2023-05-08 at 22.21.36.jpeg" alt="" class="image">
+            <h5 class="service-title">Réalisation de forage</h5>
+          </div>
+          <div class="service">
+            <img src="./images/WhatsApp Image 2023-05-08 at 22.21.36.jpeg" alt="" class="image">
+            <h5 class="service-title">Réalisation de forage</h5>
+          </div>
+          <div class="service">
+            <img src="./images/WhatsApp Image 2023-05-08 at 22.21.36.jpeg" alt="" class="image">
+            <h5 class="service-title">Réalisation de forage</h5>
+          </div>
+          <div class="service">
+            <img src="./images/WhatsApp Image 2023-05-09 at 09.24.57 (2).jpeg" alt="" class="image">
+            <h5 class="service-title">Réalisation de forage</h5>
+          </div>
+          <div class="service">
+            <img src="./images/WhatsApp Image 2023-05-09 at 09.24.57 (2).jpeg" alt="" class="image">
+            <h5 class="service-title">Réalisation de forage</h5>
+          </div>
+          <div class="service">
+            <img src="./images/WhatsApp Image 2023-05-09 at 09.24.57 (2).jpeg" alt="" class="image">
+            <h5 class="service-title">Réalisation de forage</h5>
+          </div>
+        </div>
       </div>
-    </div>
 
     <h3 class="titre-formation" id="formations">Les artisans des métires de l'eau du Benin donnent des formations certifiantes</h3>
     <div class="formation-prev">
