@@ -4,11 +4,12 @@
     padding: 1% 2%;
     display: flex;
     color: #ffffff;
-    background-color: #000;
+    background-image: url("./images/WhatsApp\ Image\ 2023-05-08\ at\ 22.21.36.jpeg");
+    background: #0F3A64;
+    background-repeat: no-repeat;
+    
 }
-.navbar{
-    background-color: #000;
-}
+
 @media all and (max-width:768px) {
     .president{
         width: 100%;
@@ -60,7 +61,7 @@
 }
 h1{
     font-weight: 700;
-    font-size: 4.0em;
+    font-size: 3.0em;
 }
 @media all and (max-width:768px) {
     h1{
@@ -68,15 +69,27 @@ h1{
     }
 }
 .lien{
-    border: 1px solid #193d83;
-    background-color: #193d83;
-    color: #fff;
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #0F3A64;
     padding: 10px;
+    font-weight: 600;
     text-decoration: none;
     cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 .lien:hover{
+    background-color: #0F3A64;
     color: #fff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
 }
 @media all and (max-width:768px) {
     .liens{
@@ -85,14 +98,15 @@ h1{
         margin: 0 1%;
     }
     .lien{
-        border: 1px solid #193d83;
-        background-color: #193d83;
-        color: #fff;
+        border: 1px solid #fff;
+        background-color: #fff;
+        color: #0F3A64;
         padding: 2px;
         text-decoration: none;
         cursor: pointer;
         width: 60%;
-        font-size: 0.7em;
+        height: 40px;
+        font-size: 0.5em;
     }
 
 }
@@ -121,16 +135,21 @@ h1{
     padding: 100px 0;
     padding: 1% 40% 1% 2%;
     border: 0px solid black;
+    color: #0F3A65;
+    position: relative;
+    top: 50px;
+    font-weight: 600;
 }
 @media all and (max-width:768px) {
-    .services-prev-title{
+    .services-title{
         text-align: center;
         font-size: 1.0em;
         width: 100%;
         margin: 0 0;
-        background-color: #000;
-        color: #fff;
+        color: #0F3A64;
         padding: 0;
+        position: relative;
+        top: 0;
     }
 }
 
@@ -160,9 +179,9 @@ h1{
 }
 
 .service-title{
-    font-size: 1.0em;
+    font-size: 1.2em;
     font-weight: bold;
-    color: #193d83;
+    color: #0F3A65;
 }
 @media all and (max-width:768px){
     .service-title{

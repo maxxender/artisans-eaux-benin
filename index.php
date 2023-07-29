@@ -28,13 +28,14 @@
 
     <div class="president">
         <div class="president-part president-part-first">
-            <h1>Plateforme digitale des plombiers du Benin</h1>
+            <span>Bienvenue sur</span>
+            <h1>La palteforme digitale des artisans et hydraulicens en eaux du Benin</h1>
             <p>
-              Contactez nos plombiers pour tout vos services d'assainissement, d'adduction d'eau.               
+              Que souhaitez vous faire ?               
             </p>
             <div class="liens">
-              <a href="./inscription.php" class="lien">S'inscrire sur le site</a>
-              <a href="./artisans.php" class="lien" style="display: none;">contactez un plombier</a>
+              <a href="./inscription.php" class="lien">S'inscrire comme plombier ou hydraulicien</a>
+              <a href="./artisans.php" class="lien">contactez un plombier ou hydraulicien</a>
             </div>
         </div>
         <div class="president-part">

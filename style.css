@@ -6,10 +6,13 @@ body{
     font-family: 'Abel', sans-serif;
 }
 .navbar{
-    background-color: #000;
+    background-color: #0F3A64;
+    color: #fff;
     
 }
-
+.nav-link{
+    color: #fff;
+}
 .account-tab-link
 {
     background-color: #193d83;
@@ -25,11 +28,11 @@ body{
 {
     background-color: #193d83;
     color: #fff;
-    border-radius: 0;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
+    border-radius: 0 ;
+    -webkit-border-radius: 0 ;
+    -moz-border-radius: 0 ;
+    -ms-border-radius: 0 ;
+    -o-border-radius: 0 ;
     margin: 5px 0;
 }
 .account-tab-link:hover
@@ -37,11 +40,11 @@ body{
     background-color: #fff;
     color: #193d83;
     border: 1px solid #193d83;
-    border-radius: 0;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
+    border-radius:  0;
+    -webkit-border-radius:  0;
+    -moz-border-radius:  0;
+    -ms-border-radius:  0;
+    -o-border-radius:  0;
 }
 li a{
     text-decoration: none;
@@ -72,4 +75,8 @@ footer{
         margin: 10px 1%;
         padding: 10px;
     }
+}
+.btn.btn-outline-success{
+    color: #fff;
+    border: 1px solid #fff;
 }
