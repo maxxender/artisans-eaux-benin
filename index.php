@@ -35,61 +35,61 @@
             </p>
             <div class="liens">
               <a href="./inscription.php" class="lien">S'inscrire comme plombier ou hydraulicien</a>
-              <a href="./artisans.php" class="lien">contactez un plombier ou hydraulicien</a>
-              <a href="" class="lien">Suivre une formation en plomberie</a>
+              <a href="./#services" class="lien">Demandez un service de plomberie ou d'hydraulicien</a>
+              <a href="./#formations" class="lien">Suivre une formation en plomberie</a>
               <a href="" class="lien">Vendre un produit pour plombier ou hydraulicien</a>
             </div>
         </div>
         <div class="president-part">
-          <img src="./images/WhatsApp Image 2023-05-08 at 22.21.18.jpeg" alt="">
+          <img src="./images/piscine.jpeg" alt="">
           <img src="./images/WhatsApp Image 2023-05-09 at 09.25.15.jpeg" alt="">
           <img src="./images/WhatsApp Image 2023-05-09 at 09.24.56.jpeg" alt="">
         </div>
     </div>
     
-    <div class="services-prev">
-      <h3 class="services-title">De quel service de plomberie avez vous besoin</h3>
+    <div class="services-prev" id="services">
+      <h3 class="services-title">Choisissez le service dont vous avez besoin</h3>
         <div class="services">
-          <div class="service">
-            <img src="./images/WhatsApp Image 2023-05-08 at 22.21.18.jpeg" alt="" class="image">
+          <a class="service" href="">
+            <img src="./images/citerne enterré.jpeg" alt="" class="image">
+            <h5 class="service-title">Réalisation de citerne entérré</h5>
+          </a>
+          <a class="service" href="">
+            <img src="./images/systeme filtration (2).jpeg" alt="" class="image">
+            <h5 class="service-title">Installation de système de filtration d'eau</h5>
+          </a>
+          <A class="service" href="">
+            <img src="./images/forage avec pompe.jpeg" alt="" class="image">
             <h5 class="service-title">Réalisation de forage</h5>
-          </div>
-          <div class="service">
-            <img src="./images/WhatsApp Image 2023-05-08 at 22.21.18.jpeg" alt="" class="image">
-            <h5 class="service-title">Installation de système de filtration d'eau
-</h5>
-          </div>
-          <div class="service">
-            <img src="./images/WhatsApp Image 2023-05-08 at 22.21.36.jpeg" alt="" class="image">
-            <h5 class="service-title">Réalisation de forage</h5>
-          </div>
-          <div class="service">
-            <img src="./images/WhatsApp Image 2023-05-08 at 22.21.36.jpeg" alt="" class="image">
-            <h5 class="service-title">Réalisation de forage</h5>
-          </div>
-          <div class="service">
-            <img src="./images/WhatsApp Image 2023-05-08 at 22.21.36.jpeg" alt="" class="image">
+          </a>
+          <a class="service" href="">
+            <img src="./images/beignoir salle de bain.jpeg" alt="" class="image">
+            <h5 class="service-title">Pose et installation de beignoir</h5>
+          </a>
+          <a class="service" href="">
+            <img src="./images/lavabo, douche toilette.jpeg" alt="" class="image">
             <h5 class="service-title">Installation de toilettes, lavabos et douches
-</h5>
-          </div>
-          <div class="service">
+          </h5>
+          </a>
+          <a class="service" href="">
             <img src="./images/WhatsApp Image 2023-05-09 at 09.24.57 (2).jpeg" alt="" class="image">
             <h5 class="service-title">Installation et réparation de système de chauffage</h5>
-          </div>
-          <div class="service">
-            <img src="./images/WhatsApp Image 2023-05-09 at 09.24.57 (2).jpeg" alt="" class="image">
+          </a>
+          <a class="service" href="">
+            <img src="./images/piscine.jpeg" alt="" class="image">
             <h5 class="service-title">Réalisation de piscine</h5>
-          </div>
-          <div class="service">
-            <img src="./images/WhatsApp Image 2023-05-09 at 09.24.57 (2).jpeg" alt="" class="image">
-            <h5 class="service-title">Réalisation de forage</h5>
-          </div>
+          </a>
+          <a class="service" href="">
+            <img src="./images/irrigation.jpeg" alt="" class="image">
+            <h5 class="service-title">Réalisation de système d'irrigation</h5>
+          </a>
         </div>
       </div>
 
-    <h3 class="titre-formation" id="formations">Les artisans des métires de l'eau du Benin donnent des formations certifiantes</h3>
     <div class="formation-prev">
-      <div class="formation-part formation-part-left">
+    <h3 class="titre-formation" id="formations">Les artisans des métires de l'eau du Benin donnent des formations certifiantes</h3>
+    <div class="formation-prev-container">
+    <div class="formation-part formation-part-left">
         <h3>Des formations avec 70% de pratique et 30% de théorie</h3>
         <p>
           Les artisans des métires de l'eau du benin vous offrent des formations avec diplome reconnu par l'état<br/>
@@ -103,8 +103,8 @@
         <div class="slider">
             <div class="slides">
               <div class="slide"><img src="images/services.jpg" alt=""></div>
-              <div class="slide"><img src="images/WhatsApp Image 2023-05-09 at 09.25.18.jpeg" alt=""></div>
-              <div class="slide"><img src="images/WhatsApp Image 2023-05-08 at 22.21.36.jpeg" alt=""></div>
+              <div class="slide"><img src="images/piscine.jpeg" alt=""></div>
+              <div class="slide"><img src="images/citerne enterré.jpeg" alt=""></div>
               <div class="slide"><img src="images/services.jpg" alt=""></div>
             </div>
         </div>
@@ -128,6 +128,7 @@
         </form>
       </div>
     </div>
+    </div>
 
     <div class="partenaires-prev">
       <h3 class="title-partenaire">Vendez vos équipements sanitaires sur notre plateforme</h3>
@@ -143,9 +144,9 @@
               </p>
             </div>     
             <div class="partenaires-prev-important-part">
-              <img src="./images/WhatsApp Image 2023-05-08 at 22.21.18.jpeg" alt="">
-              <img src="./images/WhatsApp Image 2023-05-09 at 09.24.56.jpeg" alt="">
-              <img src="./images/WhatsApp Image 2023-05-08 at 22.21.31.jpeg" alt="">
+              <img src="./images/beignoir salle de bain.jpeg" alt="">
+              <img src="./images/systeme filtration (2).jpeg" alt="">
+              <img src="./images/citerne enterré.jpeg" alt="">
             </div>
           </div>
           <form action="contact-partenaire.php" method="post" id="form-contact-partenaire">

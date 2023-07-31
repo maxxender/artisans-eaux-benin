@@ -55,7 +55,7 @@ li a{
 footer{
     margin: 100px 0 0 0;
     display: flex;
-    background-color: #193d83;
+    background-color: #0F3A64;
     color: #ffffff;
 }
 @media all and (max-width:768px) {
@@ -79,4 +79,7 @@ footer{
 .btn.btn-outline-success{
     color: #fff;
     border: 1px solid #fff;
+}
+a{
+    text-decoration: none;
 }

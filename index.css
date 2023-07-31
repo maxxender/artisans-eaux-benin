@@ -3,9 +3,9 @@
     margin: 0 0;
     padding: 1% 2%;
     display: flex;
-    color: #ffffff;
+    color: #0F3A64;
     background-image: url("./images/WhatsApp\ Image\ 2023-05-08\ at\ 22.21.36.jpeg");
-    background: #0F3A64;
+    background: #fff;
     background-repeat: no-repeat;
     
 }
@@ -81,16 +81,16 @@ h1{
 }
 .lien{
     background-color: #fff;
-    border: 1px solid #fff;
+    border: 2px solid #0F3A64;
     color: #0F3A64;
     font-weight: 600;
     text-decoration: none;
     cursor: pointer;
     border-radius: 5px;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
     width: 250px;
     margin: 10px 5px;
     display: inline-block;
@@ -287,10 +287,17 @@ body{
     }
 }
 .formation-prev{
+    display: inline-block;
+    width: 90%;
+    margin: 50px 5%;
+    background-color: #0F3A64;
+    color: #fff;
+}
+.formation-prev-container{
+    border: 0px solid red;
     display: flex;
     width: 90%;
     margin: 50px 5%;
-    background-color: #193d83;
     color: #fff;
     padding: 15px 2%;
 }
@@ -340,6 +347,9 @@ body{
 }
 .partenaires-prev{
     padding: 2%;
+    border: 0px solid red;
+    width: 90%;
+    margin: 0 5%;
 }
 @media all and (max-width:768px) {
     .partenaires-prev{
