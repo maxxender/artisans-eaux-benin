@@ -29,13 +29,15 @@
     <div class="president">
         <div class="president-part president-part-first">
             <span>Bienvenue sur</span>
-            <h1>La palteforme digitale des artisans et hydraulicens en eaux du Benin</h1>
+            <h1>La plateforme digitale des artisans et hydraulicens en eaux du Benin</h1>
             <p>
               Que souhaitez vous faire ?               
             </p>
             <div class="liens">
               <a href="./inscription.php" class="lien">S'inscrire comme plombier ou hydraulicien</a>
               <a href="./artisans.php" class="lien">contactez un plombier ou hydraulicien</a>
+              <a href="" class="lien">Suivre une formation en plomberie</a>
+              <a href="" class="lien">Vendre un produit pour plombier ou hydraulicien</a>
             </div>
         </div>
         <div class="president-part">
@@ -54,7 +56,8 @@
           </div>
           <div class="service">
             <img src="./images/WhatsApp Image 2023-05-08 at 22.21.18.jpeg" alt="" class="image">
-            <h5 class="service-title">Réalisation de forage</h5>
+            <h5 class="service-title">Installation de système de filtration d'eau
+</h5>
           </div>
           <div class="service">
             <img src="./images/WhatsApp Image 2023-05-08 at 22.21.36.jpeg" alt="" class="image">
@@ -66,15 +69,16 @@
           </div>
           <div class="service">
             <img src="./images/WhatsApp Image 2023-05-08 at 22.21.36.jpeg" alt="" class="image">
-            <h5 class="service-title">Réalisation de forage</h5>
+            <h5 class="service-title">Installation de toilettes, lavabos et douches
+</h5>
           </div>
           <div class="service">
             <img src="./images/WhatsApp Image 2023-05-09 at 09.24.57 (2).jpeg" alt="" class="image">
-            <h5 class="service-title">Réalisation de forage</h5>
+            <h5 class="service-title">Installation et réparation de système de chauffage</h5>
           </div>
           <div class="service">
             <img src="./images/WhatsApp Image 2023-05-09 at 09.24.57 (2).jpeg" alt="" class="image">
-            <h5 class="service-title">Réalisation de forage</h5>
+            <h5 class="service-title">Réalisation de piscine</h5>
           </div>
           <div class="service">
             <img src="./images/WhatsApp Image 2023-05-09 at 09.24.57 (2).jpeg" alt="" class="image">
