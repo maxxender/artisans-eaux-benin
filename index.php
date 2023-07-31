@@ -37,7 +37,7 @@
               <a href="./inscription.php" class="lien">S'inscrire comme plombier ou hydraulicien</a>
               <a href="./#services" class="lien">Demandez un service de plomberie ou d'hydraulicien</a>
               <a href="./#formations" class="lien">Suivre une formation en plomberie</a>
-              <a href="" class="lien">Vendre un produit pour plombier ou hydraulicien</a>
+              <a href="./#partenaires" class="lien">Vendre un produit pour plombier ou hydraulicien</a>
             </div>
         </div>
         <div class="president-part">
@@ -130,7 +130,7 @@
     </div>
     </div>
 
-    <div class="partenaires-prev">
+    <div class="partenaires-prev" id="partenaires">
       <h3 class="title-partenaire">Vendez vos équipements sanitaires sur notre plateforme</h3>
       <div class="partenaires-prev-container">
         <div class="partenaires-prev-important">
