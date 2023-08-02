@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="slider.css">
     <link rel="stylesheet" href="filtre.css">
+    <link rel="stylesheet" href="form-demande-service.css">
   </head>
   <body>
    <?php include_once 'header.php' ?>
@@ -30,9 +31,9 @@
         <div class="president-part president-part-first">
             <span>Bienvenue sur</span>
             <h1>La plateforme digitale des artisans et hydraulicens en eaux du Benin</h1>
-            <p>
+            <h3>
               Que souhaitez vous faire ?               
-            </p>
+</h3>
             <div class="liens">
               <a href="./inscription.php" class="lien">S'inscrire comme plombier ou hydraulicien</a>
               <a href="./#services" class="lien">Demandez un service de plomberie ou d'hydraulicien</a>
@@ -84,7 +85,35 @@
             <h5 class="service-title">Réalisation de système d'irrigation</h5>
           </a>
         </div>
+        <form action="" id="form-demande-service">
+          <div class="form-div-group">
+          <h6>Dans quel département ?</h6>
+          <select name="" id="">
+            <option value="">Choix du département</option>
+            <option value="">Oéme</option>
+            <option value="">Palteau</option>
+          </select>
+          </div>
+          <div>
+            <h6>Dans quel ville ?</h6>
+            <select name="" id="">
+              <option value="">Choix de la ville</option>
+              <option value="">Porto Novo</option>
+              <option value="">Cotonou</option>
+            </select>
+          </div>
+          <div>
+            <h6>Le contact pour vous joindre</h6>
+            <input type="text">
+          </div>
+          <div>
+            <h6>Souhaitez vous etres contactez par appels ou messages whatsapp</h6>
+            <a href="" class="btn-type-contact">Contact par appel telephonique</a>
+            <a href="" class="btn-type-contact">Contact par Whatsapp</a>
+          </div>
+        </form>
       </div>
+
 
     <div class="formation-prev">
     <h3 class="titre-formation" id="formations">Les artisans des métires de l'eau du Benin donnent des formations certifiantes</h3>
