@@ -6,9 +6,12 @@
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     text-align: center;
-    padding: 7px;
-    width: 25%;
+    padding: 7px 4px;
+    width: 19%;
     color: #fff;
+    display: inline-block;
+    position: relative;
+    top: 55px;
 }
 #form-demande-service input, #form-demande-service select{
     width: 100%;
@@ -17,7 +20,7 @@
 #form-demande-service .btn-type-contact{
     display: inline-block;
     background-color: #fff;
-    color: blue;
+    color: #0F3A64;
     border-radius: 3px;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -27,6 +30,33 @@
     width: 47%;
     margin: 0 1%;
 }
-#form-demande-service .btn-type-contact:hover{
-
+#form-demande-service .btn-type-contact:hover, .btn-type-contact:focus{
+    background-color: #000;
+    color: #fff;
+}
+.service-none{
+    display: none;
+}
+#form-demande-service .btn-submit{
+    background-color: #000;
+    width: 98%;
+    margin: 15PX 1%;
+    color: #fff;
+    padding: 10PX;
+    border-radius: 4px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+#form-demande-service div:nth-child(1){
+    border: 2px solid yellow;
+    border-radius: 4px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+#form-demande-service div:nth-child(1) p{
+    color: yellow;
 }
