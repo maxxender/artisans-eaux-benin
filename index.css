@@ -132,8 +132,9 @@ h1{
 
 .services{
     display: inline-block;
-    width: 100%;
+    width: 80%;
     margin: 40px 0;
+    border: 0px solid black;
 }
 @media all and (max-width:768px) {
     .services{
@@ -148,7 +149,7 @@ h1{
     width: 90%;
     margin: 10px 5%;
     background-color: #0F3A64;
-    
+    display: block;
 }
 .services-title{
     font-size: 1.5em;
@@ -176,9 +177,9 @@ h1{
 }
 
 .service{
-    width: 22%;
-    margin: 17px 1%;
-    display: inline-block;
+    width: 23%;
+    margin: 17px 0.4%;
+    display: inline-table;
     border: 1px solid #fff;
     border-radius: 5px;
     -webkit-border-radius:;
@@ -214,10 +215,12 @@ h1{
 }
 
 .service-title{
-    font-size: 1.0em;
+    font-size: 0.9em;
     font-weight: 300;
     color: #fff;
-    padding: 5px;
+    padding: 3px;
+    border: 0px solid red;
+    height: 70px;
 }
 @media all and (max-width:768px){
     .service-title{
