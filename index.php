@@ -50,68 +50,43 @@
     
     <div class="services-prev" id="services">
       <h3 class="services-title">Choisissez le service dont vous avez besoin</h3>
-        <div class="services">
-          <a class="service" href="">
+        <div class="services" >
+          <a class="service" href="#">
             <img src="./images/citerne enterré.jpeg" alt="" class="image">
             <h5 class="service-title">Réalisation de citerne entérré</h5>
           </a>
-          <a class="service" href="">
+          <a class="service" href="#">
             <img src="./images/systeme filtration (2).jpeg" alt="" class="image">
             <h5 class="service-title">Installation de système de filtration d'eau</h5>
           </a>
-          <A class="service" href="">
+          <A class="service" href="#">
             <img src="./images/forage avec pompe.jpeg" alt="" class="image">
             <h5 class="service-title">Réalisation de forage</h5>
           </a>
-          <a class="service" href="">
+          <a class="service" href="#">
             <img src="./images/beignoir salle de bain.jpeg" alt="" class="image">
             <h5 class="service-title">Pose et installation de beignoir</h5>
           </a>
-          <a class="service" href="">
+          <a class="service" href="#">
             <img src="./images/lavabo, douche toilette.jpeg" alt="" class="image">
             <h5 class="service-title">Installation de toilettes, lavabos et douches
           </h5>
           </a>
-          <a class="service" href="">
+          <a class="service" href="#">
             <img src="./images/WhatsApp Image 2023-05-09 at 09.24.57 (2).jpeg" alt="" class="image">
             <h5 class="service-title">Installation et réparation de système de chauffage</h5>
           </a>
-          <a class="service" href="">
+          <a class="service" href="#">
             <img src="./images/piscine.jpeg" alt="" class="image">
             <h5 class="service-title">Réalisation de piscine</h5>
           </a>
-          <a class="service" href="">
+          <a class="service" href="#">
             <img src="./images/irrigation.jpeg" alt="" class="image">
             <h5 class="service-title">Réalisation de système d'irrigation</h5>
           </a>
         </div>
-        <form action="" id="form-demande-service">
-          <div class="form-div-group">
-          <h6>Dans quel département ?</h6>
-          <select name="" id="">
-            <option value="">Choix du département</option>
-            <option value="">Oéme</option>
-            <option value="">Palteau</option>
-          </select>
-          </div>
-          <div>
-            <h6>Dans quel ville ?</h6>
-            <select name="" id="">
-              <option value="">Choix de la ville</option>
-              <option value="">Porto Novo</option>
-              <option value="">Cotonou</option>
-            </select>
-          </div>
-          <div>
-            <h6>Le contact pour vous joindre</h6>
-            <input type="text">
-          </div>
-          <div>
-            <h6>Souhaitez vous etres contactez par appels ou messages whatsapp</h6>
-            <a href="" class="btn-type-contact">Contact par appel telephonique</a>
-            <a href="" class="btn-type-contact">Contact par Whatsapp</a>
-          </div>
-        </form>
+        <?php include_once "demande-service.php" ?>
+
       </div>
 
 
@@ -199,5 +174,6 @@
   <?php include_once 'footer.php' ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     <script src="main.js"></script>
+    <script src="demande-service.js"></script>
   </body>
 </html>
