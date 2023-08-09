@@ -19,8 +19,8 @@
 
 @media all and (max-width:768px) {
     .president{
-        width: 100%;
-        margin: 8px 0 0 0;
+        width: 94%;
+        margin: 5px 3%;
         display: inline-block;
         color: #0F3A64;
         background-color: #fff;
@@ -61,8 +61,8 @@
 }
 @media all and (max-width:768px) {
     .president-part img{
-        margin: 0 1px ;
-        width: 30%;
+        margin: 0  ;
+        width: 31%;
         height:150px;
         display: inline-block;
     }
@@ -150,6 +150,12 @@ h1{
     margin: 10px 5%;
     background-color: #0F3A64;
     display: block;
+}
+@media all and (max-width:768px) {
+    .services-prev{
+        width: 94%;
+        margin: 5px 3%;
+    }
 }
 .services-title{
     font-size: 1.5em;
@@ -305,7 +311,14 @@ body{
     margin: 50px 5%;
     background-color: #0F3A64;
     color: #fff;
+    border:1px solid red;
 }
+ @media all and (max-width:768px) {
+    .formation-prev{
+        display: inline-block;
+        margin: 5px 0;
+    }
+ }
 .formation-prev-container{
     border: 0px solid red;
     display: flex;
@@ -313,6 +326,16 @@ body{
     margin: 50px 5%;
     color: #fff;
     padding: 15px 2%;
+}
+@media all and (max-width:768px) {
+    .formation-prev-container{
+        border: 2px solid yellow;
+        width: 98%;
+        margin: 5px 1%;
+        color: #fff;
+        padding: 5px 1px;
+        display: grid;
+    }
 }
 .formation-part{
     margin: 0;
@@ -322,7 +345,7 @@ body{
         border: none;
     }
     .formation-part form{
-        margin-left: 6px;
+        margin-left: 1px;
     }
 }
 
@@ -344,8 +367,18 @@ body{
 .formation-part-left{
     width: 60%;
 }
+@media all and (max-width:768px) {
+    .formation-part-left{
+        width: 100%;
+    }
+}
 .formation-part-right{
     width: 34%;
+}
+@media all and (max-width:768px) {
+    .formation-part-right{
+        width: 100%;
+    }
 }
 .titre-formation{
     text-align: center;
