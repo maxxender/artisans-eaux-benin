@@ -1,32 +1,33 @@
-<form action="" id="form-demande-service">
-    <div class="">
-        <h4>Vous avez choisi le service</h4>
-        <p>Réalisation d'un système d'arrosage</p>
+<form action="./demande-service-post.php" method="post" id="form-demande-service" enctype="multipart/form-data">
+    <div id="service-voulu">
+        <h4>Vous n'avez choisi aucun service pour le moment</h4>
+        <p></p>
     </div>
           <div class="form-div-group">
+            <p>A partir d'ou avez vous besoin de ce service</p>
           <h6>Dans quel département ?</h6>
-          <select name="" id="">
-            <option value="">Choix du département</option>
-            <option value="">Oéme</option>
-            <option value="">Palteau</option>
-          </select>
+          <select id="departement" class="" name="departement">
+                <?php foreach($departements as $departement): ?>
+                  <option value="<?= $departement ?>"><?= $departement ?></option>
+                <?php endforeach; ?>
+            </select>
           </div>
           <div>
             <h6>Dans quel ville ?</h6>
-            <select name="" id="">
-              <option value="">Choix de la ville</option>
-              <option value="">Porto Novo</option>
-              <option value="">Cotonou</option>
+              <select id="ville" class="" name="ville">
+                <?php foreach($villes as $ville): ?>
+                  <option value="<?= $ville ?>"><?= $ville ?></option>
+                <?php endforeach; ?>
             </select>
           </div>
           <div>
             <h6>Le contact pour vous joindre</h6>
-            <input type="text">
+            <input type="text" name="contact" id="contact-client">
           </div>
           <div>
             <h6>Souhaitez vous etres contactez par appels ou messages whatsapp</h6>
-            <a href="" class="btn-type-contact">Contact par appel telephonique</a>
-            <a href="" class="btn-type-contact">Contact par message Whatsapp</a>
+            <div class="btn-type-contact">Contact par appel telephonique</div>
+            <div class="btn-type-contact">Contact par message Whatsapp</div>
           </div>
-          <button type="submit" class="btn-submit">Lancez un appel d'offre</button>
+          <button type="submit" class="btn-submit" id="submit-demande-service">Envoyer à tous les plombiers et hydraulicien du Bénin</button>
         </form>

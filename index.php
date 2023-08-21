@@ -1,6 +1,7 @@
 <?php
   session_start();
   include_once "ville-benin.php";
+  include_once "departements-benin.php";
   include_once 'pdo.php';
 
   $req1 = $pdo->query('SELECT membres.tel, services.titre_service, services.photo_service, services.prix_service FROM membres INNER JOIN services ON membres.id = services.id_artisan');
@@ -93,7 +94,7 @@
     <div class="formation-prev">
     <h3 class="titre-formation" id="formations">Les artisans des métires de l'eau du Benin donnent des formations certifiantes</h3>
     <div class="formation-prev-container">
-    <div class="formation-part formation-part-left">
+      <div class="formation-part formation-part-left">
         <h3>Des formations avec 70% de pratique et 30% de théorie</h3>
         <p>
           Les artisans des métires de l'eau du benin vous offrent des formations avec diplome reconnu par l'état<br/>
@@ -104,14 +105,6 @@
           <li>Une formation 70% pratique </li>
           <li>Formation avec diplome reconnu par l'état</li>
         </ul>
-        <div class="slider">
-            <div class="slides">
-              <div class="slide"><img src="images/services.jpg" alt=""></div>
-              <div class="slide"><img src="images/piscine.jpeg" alt=""></div>
-              <div class="slide"><img src="images/citerne enterré.jpeg" alt=""></div>
-              <div class="slide"><img src="images/services.jpg" alt=""></div>
-            </div>
-        </div>
       </div>
       <div class="formation-part formation-part-right">
         <form action="contact-formation-post.php" method="post" id="#contact-formation">
@@ -173,7 +166,7 @@
 
   <?php include_once 'footer.php' ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-    <script src="main.js"></script>
+    <script src="ajax-post.js"></script>
     <script src="demande-service.js"></script>
   </body>
 </html>
