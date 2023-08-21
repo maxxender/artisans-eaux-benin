@@ -12,7 +12,7 @@
       <div class="footer-part">
         <h3>Que voulez vous faire ?</h3>
         <ul>
-          <li><a href="services.php">contactez un artisan</a></li>
+          <li><a href="#services">Comandez un service</a></li>
           <li><a href="inscription.php">S'inscrire sur le site</a></li>
           <li><a href="#formations">Suivre une formation</a></li>
         </ul>

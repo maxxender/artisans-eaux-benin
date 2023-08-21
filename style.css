@@ -58,6 +58,9 @@ footer{
     background-color: #0F3A64;
     color: #ffffff;
 }
+footer li{
+    list-style-type: none;
+}
 @media all and (max-width:768px) {
     footer{
         margin: 100px 0 0 0;
@@ -75,6 +78,9 @@ footer{
         margin: 10px 1%;
         padding: 10px;
     }
+}
+.yellow-border-service{
+    border: 3px solid yellow;
 }
 .btn.btn-outline-success{
     color: #fff;
