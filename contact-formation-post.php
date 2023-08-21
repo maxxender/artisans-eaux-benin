@@ -9,7 +9,7 @@ if(!empty($_POST['nom']) && !empty($_POST['prenom']) && !empty($_POST['tel']) &&
         htmlentities($_POST['tel']),
         htmlentities($_POST['ville_residence'])
     ));
-    $_SESSION['form_response'] = "merci ! Nous avons recu votre demande d'inscription à nos formation. Nous vous contacterons bientot";
+    $_SESSION['form_response'] = "Merci ! Nous avons recu votre demande d'inscription à nos formation. Nous vous contacterons bientot";
     header('location:./');
 }else{
     header('location:./#contact-formation');
