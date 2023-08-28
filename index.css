@@ -133,8 +133,9 @@ h1{
 .services{
     display: inline-block;
     width: 80%;
-    margin: 40px 0;
+    margin: 20px 0;
     border: 0px solid black;
+    text-align: center;
 }
 @media all and (max-width:768px) {
     .services{
@@ -149,7 +150,7 @@ h1{
     width: 90%;
     margin: 10px 5%;
     background-color: #0F3A64;
-    display: block;
+
 }
 @media all and (max-width:768px) {
     .services-prev{
@@ -196,10 +197,10 @@ h1{
 .service:hover{
     border: 2px solid #fff;
     border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    -ms-border-radius: 5px;
-    -o-border-radius: 5px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
 }
 .service a{
     text-decoration: none;

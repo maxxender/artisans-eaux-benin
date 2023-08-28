@@ -6,13 +6,16 @@
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     text-align: center;
-    padding: 7px 4px;
+    padding: 4px 2px;
     width: 19%;
-    height: 600px;
+    top: 50px;
     color: #fff;
-    display: inline-block;
     position: relative;
-    top: 90px;
+    font-size: 0.8em;
+    display: inline-block;
+}
+#form-demande-service h4{
+    font-size: 1.0em;
 }
 @media all and (max-width:768px) {
     #form-demande-service{
@@ -75,10 +78,10 @@
 #form-demande-service div:nth-child(1){
     border: 2px solid yellow;
     border-radius: 4px;
-    -webkit-border-radius:;
-    -moz-border-radius:;
-    -ms-border-radius:;
-    -o-border-radius:;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
 }
 #form-demande-service div:nth-child(1) p{
     color: yellow;
