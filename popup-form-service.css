@@ -1,0 +1,24 @@
+#popup-form-service{
+    background-color: rgba(15, 58, 100, 0.5);
+    position: fixed;
+    width: 50%;
+    height: 50%;
+    left: 25%;
+    top: 25%;
+    border: 2px solid #fff;
+    display: none;
+}
+
+#fermer-popup{
+    padding: 7px;
+    background-color: #fff;
+    color: rgb(15, 58, 100);
+    height: 300px;
+    display: block;
+}
+.div-erreur, .div-success{
+    background-color: #fff;
+    color: rgb(15, 58, 100);
+    padding: 5px 2px;
+    margin: 7px;
+}

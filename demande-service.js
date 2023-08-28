@@ -24,7 +24,7 @@ services.forEach(service=>{
         serviceVoulu = serviceChoisi
         console.log(document.getElementById('contact-client').value);
 
-        document.querySelector('#service-voulu h4').innerHTML = "Vous avez selectionnez le service : "
+        document.querySelector('#service-voulu h4').innerHTML = "Vous avez selectionnez le service "
         document.querySelector('#service-voulu p').innerHTML = serviceVoulu
         window.location.href = "./#form-demande-service"
 
@@ -50,19 +50,35 @@ document.querySelector('#submit-demande-service').addEventListener('click',funct
     }
 
     xhr.onreadystatechange = function(e){
-        if(this.readyState === 4 && this.status === 200){
-            reponseServer = JSON.parse(xhr.responseText)
-            if(reponseServer['result'] == "success"){
-                console.log('succes magistral');
-                var divResponse = document.createElement('div');
-                divResponse.innerHTML = reponseServer['message'];
-                divResponse.style.border = '1px solid yellow';
-                divResponse.style.color = 'yellow'
-                form.appendChild(divResponse);
+        var popup= document.querySelector("#popup-form-service");
+        var fermerPopup = document.querySelector("#fermer-popup")
+        if(this.readyState === 4 ){
+            reponseServer = JSON.parse(xhr.responseText);
+            if(this.status === 200){
+                if(reponseServer['result'] == "success"){
+                    var divElementPopup = document.createElement('div');
+                    divElementPopup.classList.add('div-success')
+                    divElementPopup.innerHTML = reponseServer['message'];
+                    popup.appendChild(divElementPopup)
+                }
             }
         }else{
-            console.log(JSON.parse(xhr.responseText));
+            var erreurs = JSON.parse(xhr.responseText);
+            console.log(popup.querySelectorAll('div').length)
+                popup.innerHTML = ''
+                console.log(erreurs)
+                erreurs.forEach(erreur=>{
+                    var spanErreur = document.createElement('div')
+                    spanErreur.classList.add('div-erreur')
+                    spanErreur.innerHTML = erreur;
+                    popup.appendChild(spanErreur)
+                });
         }
+        popup.style.display = 'inline-block';
+        fermerPopup.addEventListener('click',function(){
+            popup.style.display = 'none'
+        })
+
     }
     xhr.open(form.getAttribute('method'),form.getAttribute('action'), true)
     xhr.setRequestHeader('X-Requested-With', 'xmlhttprequest');

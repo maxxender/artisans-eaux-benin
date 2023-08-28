@@ -2,16 +2,16 @@
 $errors = [];
 $ajax = !empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest';
 if(empty($_POST['service'])){
-    $errors[] = "Vous n'avez choisi aucun service pour le moment";
+    $errors[] = 'Vous n\'avez choisi aucun service pour le moment';
 }
 if(empty($_POST['departement'])){
-    $errors[] = "Vous devez définir le département dans lequel vous vous situé";
+    array_push($errors, 'Vous devez définir le département dans lequel vous vous situé');
 }
 if(empty($_POST['ville'])){
-    $errors[] = "Vous devez nous dire dans quel ville vous vous situé";
+    array_push($errors, 'Vous devez nous dire dans quel ville vous vous situé');
 }
 if(empty($_POST['contact'])){
-    $errors[] = "Ajouté votre contact pour pouvoir etre joint par les hydrauliciens";
+    array_push($errors, 'Ajouté votre contact pour pouvoir etre joint par les hydrauliciens');
 }
     if(empty($errors)){
         if($ajax){
@@ -28,7 +28,7 @@ if(empty($_POST['contact'])){
       
     }else{
         if($ajax){
-            echo json_encode($_POST);
+            echo json_encode($errors);
             header('Content-Type: application/json');
             http_response_code(400);
             die();
