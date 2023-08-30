@@ -6,12 +6,12 @@
     -ms-border-radius: 5px;
     -o-border-radius: 5px;
     text-align: center;
-    padding: 4px 2px;
+    padding: 4px;
     width: 19%;
     top: 50px;
     color: #fff;
     position: relative;
-    font-size: 0.8em;
+    
     display: inline-block;
 }
 #form-demande-service h4{
@@ -32,7 +32,7 @@
         display: inline-block;
         position: relative;
         top: 15px;
-        font-size: 0.7em;
+        font-size: 0.8em;
     }
     #form-demande-service h6, #form-demande-service h4{
         font-size: 0.8em;
@@ -41,6 +41,7 @@
 #form-demande-service input, #form-demande-service select{
     width: 100%;
     height: 28px;
+    margin: 0 5px;
 }
 #form-demande-service .btn-type-contact{
     display: inline-block;
@@ -92,4 +93,7 @@
     -moz-border-radius: 9px;
     -ms-border-radius: 9px;
     -o-border-radius: 9px;
+}
+.btn-type-contact{
+    cursor: pointer;
 }
