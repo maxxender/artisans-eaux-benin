@@ -13,12 +13,16 @@ if(empty($_POST['ville'])){
 if(empty($_POST['contact'])){
     array_push($errors, 'Ajouté votre contact pour pouvoir etre joint par les hydrauliciens');
 }
+if(empty($_POST['typeContact'])){
+    $errors[] = "Vous devez choisir de quel manière vous voulez etre joint par les plombiers et hydrauliciens";
+}
     if(empty($errors)){
         if($ajax){
             echo json_encode([
                 'result'=>'success',
                 'service'=> $_POST['service'],
                 "errors"=> $errors,
+                "datas"=>$_POST,
                 'message'=> "Les hydrauliciens du benin ont recu votre offre. Ils vous contacterons bientot"
             ]);
             header('Content-Type: application/json');

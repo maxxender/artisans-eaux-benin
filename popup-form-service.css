@@ -9,11 +9,27 @@
     display: none;
 }
 
+@media all and (max-width:768px) {
+    #popup-form-service{
+        background-color: rgb(15, 58, 100);
+        position: fixed;
+        width: 80%;
+        height: 50%;
+        left: 10%;
+        top: 20%;
+        border: 2px solid #fff;
+        color: #fff;
+        display: none;
+        z-index: 1;
+        font-size: 0.8em;
+        font-weight: 800;
+    }
+}
+
 #fermer-popup{
     padding: 7px;
     background-color: #fff;
     color: rgb(15, 58, 100);
-    height: 300px;
     display: block;
 }
 .div-erreur, .div-success{
@@ -21,4 +37,5 @@
     color: rgb(15, 58, 100);
     padding: 5px 2px;
     margin: 7px;
+    font-weight: 700px;
 }

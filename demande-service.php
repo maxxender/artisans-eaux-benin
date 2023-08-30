@@ -26,8 +26,8 @@
           </div>
           <div>
             <h6>Souhaitez vous etres contactez par appels ou messages whatsapp</h6>
-            <div class="btn-type-contact">Appel telephonique</div>
-            <div class="btn-type-contact">Message Whatsapp</div>
+            <div class="btn-type-contact" >Appel telephonique</div>
+            <div class="btn-type-contact" >Message Whatsapp</div>
           </div>
           <button type="submit" class="btn-submit" id="submit-demande-service">Envoyer à tous les plombiers et hydraulicien du Bénin </button>
         </form>

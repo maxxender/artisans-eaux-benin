@@ -52,9 +52,7 @@
     
     <div class="services-prev" id="services">
       <div id="popup-form-service">
-        <h2>siperopo</h2>
         <button id="fermer-popup">ok, j'ai compris</button>
-        <p>supernatural</p>
       </div>
     <h3 class="services-title">Choisissez le service dont vous avez besoin</h3>
         <div class="services" >
