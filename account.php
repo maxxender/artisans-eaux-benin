@@ -63,6 +63,9 @@ if(!empty($_POST['titre_service']) && !empty($_POST['prix_service'])){
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Association des plombiers du Benin</title>
     <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
@@ -71,15 +74,16 @@ if(!empty($_POST['titre_service']) && !empty($_POST['prix_service'])){
   </head>
   <body>
   <?php include_once 'header.php' ?>
+     
     <div class="account">
       <div class="actions">
-        <a href="" class="action">Ajouter un service</a>
-        <a href="" class="action">Modifier ma photo de profil</a>
-        <a href="" class="action">Ajouter une photo de mes réalisations</a>
+        <h5>Que voulez vous faire ?</h5>
+        <a href="" class="action">Modifier mon profil</a>
+        <a href="" class="action">Consultez les services demandes par les clients</a>
+        <a href="" class="action">Mettre des produits en vente</a>
         <a href="" class="action">Publier une information à tous les plombiers inscrits</a>
-        <a href="" class="action">Ajouter un service</a>
       </div>
-      <div class="account-part profile">
+      <div class="account-part profile" style="display: none;">
         <div>
           <form action="set-photo-profil.php" method="post" id="form_new_photo_profil">
             <a href="#link-set-new-photo" id="link-set-new-photo">Changez ma photo de profil</a>
@@ -100,33 +104,7 @@ if(!empty($_POST['titre_service']) && !empty($_POST['prix_service'])){
         </div>
       </div>
       
-      <div class="account-part">
-        <div class="account-part-part">
-          <h4>Créez des services et fixer leur prix</h4>
-          <form action="account.php" method="post" enctype="multipart/form-data">
-            <?php if(!empty($response_form_add_service)): ?>
-              <div class="response-form"><?= $response_form_add_service ?></div>
-              <?php endif ?>
-            <label for="">Décrivez votre service ici</label>
-            <textarea name="titre_service" id="" placeholder="exemple : Pose de robinet "></textarea>
-            <label for="">Prix du service</label>
-            <input type="text" name="prix_service" placeholder="ex : 500">
-            <label for="">Photo du service</label>
-            <input type="file" name="photo_service" id="">
-            <button type="submit">Créez le service</button>
-          </form>
-        </div>
-        <div class="account-part-part">
-          <h6>Ajouter les photos de vos réalisations ici</h6>
-          <form action="" method="post" enctype="multipart/form-data">
-          <input type="file" name="photos" id="" multiple>
-          <button type="submit">ajouter les photos</button>
-        </form>
-        </div>
-      </div>
-
-
-      <div class="account-part">
+      <div class="account-part" style="display: none;">
         <div class="account-part-part">
           <form action="ajouter-produit-artisan.php" method="post" enctype="multipart/form-data">
             <h4>Ajouter des produits de plomberie ici</h4>
@@ -147,10 +125,16 @@ if(!empty($_POST['titre_service']) && !empty($_POST['prix_service'])){
           <button type="submit">envoyer le message</button>
         </form>
       </div>
+
+      <div class="posts-client">
+      <h5>Salutation, BADAROU MATINOU vous etes actuellement conecté sur votre comptez</h5>
+        <h4>Offres de services de clients</h4>
+      </div>
     </div>
     <?php include_once "footer.php" ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
     
     <script src="account.js"></script>
+    <script src="get-demandes-service.js" ></script>
   </body>
 </html>

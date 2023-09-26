@@ -10,15 +10,36 @@ if(empty($_POST['departement'])){
 if(empty($_POST['ville'])){
     array_push($errors, 'Vous devez nous dire dans quel ville vous vous situé');
 }
-if(empty($_POST['contact'])){
+if(empty($_POST['contact']) || $_POST['contact'] == "" ){
     array_push($errors, 'Ajouté votre contact pour pouvoir etre joint par les hydrauliciens');
 }
 if(empty($_POST['typeContact'])){
     $errors[] = "Vous devez choisir de quel manière vous voulez etre joint par les plombiers et hydrauliciens";
 }
+if(empty($_POST['nom']) || $_POST['nom'] == ""){
+    $errors[] = "Vous n'avez entrée aucun nom, les hydrauclients doivent vous appelez";
+}
+if(empty($_POST['prenom']) || $_POST['prenom'] == ""){
+    $errors[] = "Vous n'avez entrée aucun prenom, les hydrauclients doivent vous appelez";
+}
+
     if(empty($errors)){
         if($ajax){
-            echo json_encode([
+            include_once 'pdo.php';
+            $req = $pdo->prepare('INSERT INTO demande_services(tel_client,type_contact, nom_client, prenom_client, nom_service, departement_service,
+            ville_service,date_service)
+            VALUES(?, ?, ?, ?, ?, ?, ?, NOW() )');
+            $req->execute((array(
+                htmlspecialchars($_POST['contact']),
+                htmlspecialchars($_POST['typeContact']),
+                htmlspecialchars($_POST['nom']),
+                htmlspecialchars($_POST['prenom']),
+                htmlspecialchars($_POST['service']),
+                htmlspecialchars($_POST['departement']),
+                htmlspecialchars($_POST['ville'])
+            )));
+
+           echo json_encode([
                 'result'=>'success',
                 'service'=> $_POST['service'],
                 "errors"=> $errors,

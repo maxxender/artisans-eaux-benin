@@ -10,10 +10,14 @@ var serviceBorderWhite = function(services){
 }
 
 var serviceChoisi = null ;
-var departement = document.querySelector('#departement').options[document.querySelector('#departement').selectedIndex].value;
+/*var departement = document.querySelector('#departement').options[document.querySelector('#departement').selectedIndex].value;
 var ville = document.querySelector('#ville').options[document.querySelector('#ville').selectedIndex].value;
 var contact = document.getElementById('contact-client').value;
-var typeContact = null;
+var typeContact = document.querySelectorAll('.btn-type-contact')[0].innerHTML;
+var nom = document.getElementById('nom-client').value;
+var prenom = document.querySelector('#prenom-client').value;*/
+
+
 
 services.forEach(service=>{
     service.addEventListener('click',function(e){
@@ -35,7 +39,6 @@ var btnsTypeContact = document.querySelectorAll('.btn-type-contact')
 btnsTypeContact.forEach(btn=>{
     btn.addEventListener('click',function(){
         typeContact = this.innerHTML
-        alert(typeContact)
         btnsTypeContact[0].style.backgroundColor = '#fff'
         btnsTypeContact[1].style.backgroundColor = '#fff'
         btnsTypeContact[0].style.color = '#0F3A64'
@@ -53,22 +56,28 @@ document.querySelector('#submit-demande-service').addEventListener('click',funct
     if(serviceChoisi !== null && serviceChoisi !== undefined){
         formData.append('service', serviceChoisi);
     }
-    if(departement !== null && departement !== undefined){
+   // if(departement !== null && departement !== undefined){
         formData.append('departement', departement);
-    }
-    if(ville !== null && ville !== undefined){
-        formData.append('ville', ville);
-    }
-    if(contact !== null && contact !== undefined){
-        formData.append('contact', document.getElementById('contact-client').value);
-    }
-    formData.append('typeContact', typeContact)
+        formData.append('departement', document.querySelector('#departement').options[document.querySelector('#departement').selectedIndex].value);
 
+    //}
+    //if(ville !== null && ville !== undefined){
+        formData.append('ville', document.querySelector('#ville').options[document.querySelector('#ville').selectedIndex].value);
+        console.log(document.querySelector('#ville').options[document.querySelector('#ville').selectedIndex].value)
+    //}
+    //if(contact !== null && contact !== undefined){
+        formData.append('contact', document.getElementById('contact-client').value);
+    //}
+    formData.append('typeContact', typeContact)
+    //if(nom !== null && nom !== undefined){
+        formData.append('nom', document.getElementById('nom-client').value);
+        formData.append('prenom', document.querySelector('#prenom-client').value)
+    //}
+
+ 
     xhr.onreadystatechange = function(e){
         var popup= document.querySelector("#popup-form-service");
-        var fermerPopup = document.querySelector("#fermer-popup");
-
-     
+        var fermerPopup = document.querySelector("#fermer-popup");    
         if(this.readyState === 4 ){
             reponseServer = JSON.parse(xhr.responseText);
             if(this.status === 200){

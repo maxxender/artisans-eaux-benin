@@ -22,13 +22,23 @@ $artisans = $req->fetchAll();
     <div class="membres">
       <?php foreach($artisans as $artisan):?>
         <div class="membre">
-          <img class="membre-part" src="images/artisans/<?= !empty($artisan['photo_identite']) ?> ?>" alt="photo identite">
-          <div class="membre-part"><?= $artisan['nom'] ?></div>
-          <div class="membre-part"><?= $artisan['prenom'] ?></div>
-          <div class="membre-part"><?= $artisan['tel'] ?></div>
-          <div class="membre-part"><a href="">bloquer le compte</a></div>
+          <img class="membre-part" src="images/artisans/<?= !empty($artisan['photo_identite']) ? $artisan['photo_identite'] : "profil-avatar.png" ?> ?>" alt="photo identite">
+          <div class="membre-part membre-part-info"><?= $artisan['nom'] ?></div>
+          <div class="membre-part membre-part-info"><?= $artisan['prenom'] ?></div>
+          <div class="membre-part membre-part-info"><?= $artisan['tel'] ?></div>
+          <div class="membre-part membre-part-info"><a href="">bloquer le compte</a></div>
         </div>
       <?php endforeach ?>
+    </div>
+    <div class="admin-action">
+      <div>
+      <legend>Action à éffectuer</legend>
+      <select name="" id="">
+        <option value="">Voir la liste des artisans inscrits</option>
+        <option value="">Voir la liste des artisans bloqué</option>
+        <option value="">Voir la liste des demandeurs de formations</option>
+      </select>
+      </div>
     </div>
   </div>
       

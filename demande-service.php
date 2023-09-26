@@ -29,5 +29,13 @@
             <div class="btn-type-contact" >Appel telephonique</div>
             <div class="btn-type-contact" >Message Whatsapp</div>
           </div>
-          <button type="submit" class="btn-submit" id="submit-demande-service">Envoyer à tous les plombiers et hydraulicien du Bénin </button>
+          <div>
+            <h6>Votre nom</h6>
+            <input type="text" name="nom" id="nom-client">
+          </div>
+          <div>
+            <h6>Votre prénom</h6>
+            <input type="text" name="prenom" id="prenom-client">
+          </div>
+          <button type="submit" class="btn-submit" id="submit-demande-service">Soumettre ma demande </button>
         </form>
